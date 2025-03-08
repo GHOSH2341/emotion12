@@ -11,7 +11,7 @@ CLASS_LABELS_EMOJIS = ["😡", "🤢", "😱", "😊", "😐", "😔", "😲"]
 # Load trained model
 @st.cache(allow_output_mutation=True)
 def load_model():
-    model = tf.keras.models.load_model("emotion_detection_model.h5")
+    model = tf.keras.models.load_model("mental-emotion-detection.ipynb")
     return model
 
 model = load_model()
